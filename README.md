@@ -37,21 +37,13 @@ Add this line (example):
 
 ```html
 <p><strong>Deployed by:</strong> DMI Cohort 2 | Nuthan S | Group 3 | Week 4 | 13-02-2026</p>
-```
-Sprint 1 completed
-Added footer feature
-Added dynamic date generated using JavaScript
+<span id="deployDate"></span>
 
 <script>
   const today = new Date();
-
-  const options = {
-   day: '2-digit',
-   month: 'short',
-   year: 'numeric'
-  };
-
-  document.getElementById("deployDate").textContent =
-   today.toLocaleDateString('en-IN', options);
+  const options = { day: '2-digit', month: 'short', year: 'numeric' };
+  const formattedDate = today.toLocaleDateString('en-GB', options);
+  document.getElementById('deployDate').textContent = formattedDate;
 </script>
+
 ✅ This proof must be visible in your browser screenshot submission.
