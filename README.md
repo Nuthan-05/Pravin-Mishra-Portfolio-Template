@@ -46,4 +46,15 @@ Add this line (example):
   document.getElementById('deployDate').textContent = formattedDate;
 </script>
 
+## UI & Accessibility Improvements
+
+- Improved footer spacing and padding
+- Increased contrast for better readability
+- Adjusted font size for desktop and mobile
+- Tested responsive layout using Chrome DevTools
+
+Responsive validation performed on:
+- Desktop view
+- Mobile view (iPhone viewport simulation)
+
 ✅ This proof must be visible in your browser screenshot submission.
