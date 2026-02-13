@@ -607,18 +607,13 @@
 
     </div>
   </footer>
+  
   <script>
   const today = new Date();
-
-  const options = {
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric'
-  };
-
-  document.getElementById("deployDate").textContent =
-    today.toLocaleDateString('en-IN', options);
-  </script>
+  const options = { day: '2-digit', month: 'short', year: 'numeric' };
+  const formattedDate = today.toLocaleDateString('en-GB', options);
+  document.getElementById('deployDate').textContent = formattedDate;
+</script>
 
 
 
